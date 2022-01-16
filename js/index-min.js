@@ -30,6 +30,29 @@ var letter = new Vue({
         }
     }
 })
+var music= new Vue({
+    el: "#music",
+    data: {
+        shoes:false,
+        audios:'<head><audio id="bgm" src="/img/bgm.mp3" play="false" loop="true" autoplay="autoplay"/>  </head>',
+    },
+    methods: {
+        handleClick:function(){
+            if(this.shoes == false){
+                this.shoes = true;
+                // if(this.audios==''){
+                //     // this.audios='<head><audio id="bgm" src="/img/bgm.mp3" play="true" loop="true" autoplay="autoplay"/>  </head>';
+                // }else{
+                document.getElementById("bgm").play();
+                // }
+            }else if(this.shoes ==true){
+                 this.shoes = false;
+                 document.getElementById("bgm").pause();
+                // this.audios="";
+            }
+        }
+    }
+})
 
 
 !function () {
