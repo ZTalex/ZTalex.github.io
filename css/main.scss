@@ -1,0 +1,17 @@
+@import 'variables';
+@import 'global';
+
+@import 'mobile'; // including mobile head and foot
+@import 'mobile.body';
+@import 'mobile.msg';
+@import 'mobile.prompt';
+
+@import 'extra';
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
+}
