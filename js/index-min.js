@@ -33,8 +33,8 @@ var letter = new Vue({
 var music= new Vue({
     el: "#music",
     data: {
-        shoes:false,
-        audios:'<head><audio id="bgm" src="/img/bgm.mp3" play="false" loop="true" autoplay="autoplay"/>  </head>',
+        shoes:true,
+        audios:'<head><audio id="bgm" src="/img/bgm.mp3" play="true" loop="true" autoplay="autoplay"/>  </head>',
     },
     methods: {
         handleClick:function(){
